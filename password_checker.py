@@ -1,4 +1,4 @@
-# score : faible[0 1], moyen[2], fort[3]
+# score : faible, moyen, fort
 # exceptions :
 # longeur --> LGR
 # majuscule --> MAJ
@@ -52,7 +52,7 @@ def checker(password):
             found_sp = True
             break
     
-    if found_sp == False :
+    if not found_sp :
         missing.append("Special characters")
         score = score -1
 
